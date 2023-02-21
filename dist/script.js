@@ -1,12 +1,6 @@
-const burgerBtn = document.querySelector('.toggle__menu');
-
-burgerBtn.addEventListener('click',(e)=>{
-    const btn = e.currentTarget;
-    const header = document.querySelector('.header__nav');
-
-    if(header.style.display === 'none'){
-        header.style.display = 'block';
-    }else{
-        header.style.display = 'none';
-    }
-})
+const toggleMenu = document.querySelector(".toggle__menu");
+const headerBot = document.querySelector(".header__nav");
+toggleMenu.addEventListener("click", () => {
+  toggleMenu.classList.toggle("open");
+  headerBot.classList.toggle("open");
+});
