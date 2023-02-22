@@ -1,9 +1,3 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 /* -------------RESETS------------- */
 * {
     -webkit-box-sizing: border-box;
@@ -121,7 +115,7 @@
     max-width: 100%;
   }
 
-/* ------------- GRID --------------- */
+/* -------------GRID--------------- */
 
 @media screen and (max-width: 468px){
     .container{
@@ -135,7 +129,8 @@
     padding: 1rem;
     margin: 0 auto;
 }
-/*------------- Header -------------- */
+
+/*-------------Header-------------- */
 .header {
     background: #2b2b2b;
     padding: 2rem 0;
@@ -184,6 +179,71 @@
 
 .header .header__nav ul li:hover a{
     color: #ffa700;
+}
+
+/* ------------- Banner ----------------- */
+
+.banner {
+    background: #ffffff;
+    padding: 5rem 0;
+    padding-top: 15rem;
+}
+
+.banner .banner__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5rem 0;
+}
+.banner .banner__wrapper .banner__text{
+    max-width: 40rem;
+    text-align: justify;
+}
+.banner .banner__wrapper .banner__text h2 {
+    font-size: 8.7rem;
+    font-weight: 600;
+    color: #ffa700;
+}
+.banner .banner__wrapper .banner__text .text p {
+    margin: 3rem 0;
+}
+.banner .banner__wrapper .banner__text .icons ul {
+    display: flex;
+}
+.banner .banner__wrapper .banner__text .icons ul li a {
+    color: #ffa700;
+    font-size: 2.5rem;
+    margin-right: 1.5rem;
+}
+
+.banner .banner__wrapper .banner__text .icons ul li a:hover{
+    color: #2b2b2b;
+}
+
+.banner .container .fa-chevron-down {
+    color: #ffa700;
+    display: flex;
+    justify-content: center;
+    font-size: 3.5rem;
+}
+.banner .container .fa-chevron-down:hover{
+    color: #2b2b2b;
+}
+
+@media screen and (max-width:500px){
+    .banner .banner__wrapper {
+        flex-direction: column-reverse;
+    }
+    .banner .banner__wrapper .banner__text {
+        text-align: center;
+        margin: 0 auto;
+    }
+    .banner .banner__wrapper .banner__text .text{
+        text-align: justify;
+    }
+    .banner .banner__wrapper h1 {
+        
+    }
 }
 
 /*--------------Burger button ------------*/
@@ -250,314 +310,19 @@
     }
 }
 
-/* ------------------ Banner ------------------- */
-.banner {
-    background: #ffffff;
-    padding: 5rem 0;
-    padding-top: 15rem;
-}
-
-.banner .banner__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.banner .banner__text h1 {
-    color: #ffa700;
-    font-size: 8rem;
-    font-weight: 800;
-    max-width: 40rem;
-    line-height: 1.2;
-}
-
-.banner .banner__text p {
-    max-width: 40rem;
-    text-align: justify;
-    margin: 3rem 0;
-}
-
-.banner a#banner__btn {
-    text-transform: uppercase;
-    border: 1px solid transparent !important;
-}
-
 @media screen and (max-width:500px){
-    .banner .banner__wrapper {
-        flex-direction: column-reverse;
-    }
-    .banner .banner__text{
-       text-align: center;
-    }
-    .banner img{
-        width: 20rem;
-        margin-bottom: 3rem;
-    }
-
-    .banner .banner__text h1 {
-        max-width: fit-content;
-        font-size: 3rem;
-        margin: 0 auto;
-    }
-}
-
-/* -------------- About me ------------------------- */
-
-.about {
-    background: #ffffff;
-    padding: 15rem 0;
-    /* padding-top: 15rem; */
-}
-
-.about .about__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.about .about__wrapper .about__img{
-    position: relative;
-    max-width: 50rem;
-    width: 50%;
-}
-
-.about .about__wrapper .about__img .overlay{
-    position: absolute;
-    max-width: 50rem;
-    top: 0;
-    left: 0;
-    opacity: .3;
-}
-.about .about__wrapper .about__img .main__img{
-    width: 100%;
-}
-
-.about .about__wrapper h2 {
-    color: #ffa700;
-    font-size: 2rem;
-    font-weight: 600;
-}
-
-.about .about__wrapper p {
-    margin: 3rem 0;
-}
-
-.about .about__wrapper .about__text {
-   max-width: 55rem;
-   text-align: justify;
-}
-
-@media screen and (max-width:500px) {
-    .about .about__wrapper {
+    .footer .footer__wrapper .footer__socials{
         flex-direction: column;
     }
-    .about .about__wrapper .about__img {
-        width: 50%;
-        margin-bottom: 2rem;
-        z-index: 1;
-    }
-    .about .about__wrapper .about__img img{
-        width: 100%;
-    }
-    .about .about__wrapper h2{
-        text-align: center;
-        font-size: 3rem;
-    }
-    .about .about__wrapper .about__text p {
-        max-width: 40rem;
-    }
-    .about .about__wrapper .about__text .icons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .about .about__wrapper .about__text .icons ul li {
-        margin: 0 auto;
-    }
-}
-
-/* -------------- hm-services ---------------------- */
-.hm-services {
-    background: #2b2b2b;
-    padding: 8rem 0;
-}
-.hm-services .hm-services__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    /* grid-gap: 10rem; */
-}
-.hm-services .hm-services__item{
-    text-align: center;
-    margin: 0 5rem;
-}
-
-.hm-services .hm-services__item i {
-    font-size: 5rem;
-    color: #ffa700;
-    margin-bottom: 2rem;
-}
-
-.hm-services .hm-services__item h4 {
-    color: #ffa700;
-    font-size: 2.5rem;
-    font-weight: 600;
-}
-
-.hm-services .hm-services__item p {
-    margin: 2rem 0;
-    color: #ffffff;
-    text-align: justify;
-}
-
-@media screen and (max-width:500px) {
-    .hm-services .hm-services__wrapper{
-        display: block;
-    }
-    .hm-services .hm-services__item{
-        max-width: 40rem;
-    }
-    .hm-services .hm-services__item:nth-child(2){
-        padding: 8rem 0;
-    }
-}
-
-
-/* -------------- Latest Trends -------------------- */
-
-.trends {
-    background: #2b2b2b;
-    padding: 8rem 0;
-}
-
-.trends .trends__wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 3rem;
-    margin: 5rem 0;
-}
-
-.trends .trends__title h2 {
-    font-size: 4rem;
-    color: #ffa700;
-}
-
-.trends .trends__title p {
-    color: #ffffff;
-    font-size: 2rem;
-}
-
-.trends .trends__wrapper .trend{
-    margin: 0 auto;
-}
-.trends .trends__wrapper .trend .content img{
-    width: 100%;
-}
-
-.trends .trends__wrapper .trend .content .text {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 2rem;
-}
-.trends .trends__wrapper .trend .content .text h4{
-    color: #ffa700;
-    font-weight: 600;
-    font-size: 2rem;
-}
-.trends .trends__wrapper .trend .content .text p{
-    margin: 3rem 0;
-    font-weight: 600;
-    font-size: 1.8rem;
-}  
-.trends .trends__wrapper .trend .content .text a{
-    color: #ffa700;
-}
-
-@media screen and (max-width:500px){
-    .trends .trends__wrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .footer .footer__wrapper .footer__socials p {
+        padding-top: 2rem;
         margin: 0;
     }
-    .trends .trends__title,
-    .trends .trends__wrapper .trend {
-        margin: 2rem auto;
-        max-width: 40rem;   
+    .footer .footer__wrapper {
+        flex-direction: column;
     }
-    .trends .trends__title{
-        text-align: center;
-    }
-}
-
-/* ------------- Banner about ----------------- */
-
-.banner__about {
-    background: #ffffff;
-    padding: 5rem 0;
-    padding-top: 15rem;
-}
-
-.banner__about .banner__wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 5rem 0;
-}
-.banner__about .banner__wrapper .banner__text{
-    max-width: 40rem;
-    text-align: justify;
-}
-.banner__about .banner__wrapper .banner__text h2 {
-    font-size: 8rem;
-    font-weight: 600;
-    color: #ffa700;
-}
-.banner__about .banner__wrapper .banner__text .text p {
-    margin: 3rem 0;
-}
-.banner__about .banner__wrapper .banner__text .icons ul {
-    display: flex;
-}
-.banner__about .banner__wrapper .banner__text .icons ul li a {
-    color: #ffa700;
-    font-size: 2.5rem;
-    margin-right: 1.5rem;
-}
-
-.banner__about .banner__wrapper .banner__text .icons ul li a:hover{
-    color: #2b2b2b;
-}
-
-.banner__about .container .fa-chevron-down {
-    color: #ffa700;
-    display: flex;
-    justify-content: center;
-    font-size: 3.5rem;
-}
-.banner__about .container .fa-chevron-down:hover{
-    color: #2b2b2b;
-}
-
-@media screen and (max-width:500px){
-    .banner__about {
-        padding-top: 8rem;
-    }
-    .banner__about .banner__wrapper {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .banner__about .banner__wrapper .banner__text{
+    .footer .footer__wrapper p {
         margin-top: 2rem;
-    }
-    .banner__about .banner__wrapper .banner__text h2{
-        font-size: 3rem;
-    }
-    .banner__about .banner__wrapper .banner__text:first-child{
-        text-align: center;
-    }
-    .banner__about .banner__wrapper .banner__text .text {
-        text-align: justify !important;
     }
 }
 
@@ -597,9 +362,7 @@
 .projects .projects__wrapper .projects__container .project {
     display: flex;
     flex-direction: column;
-}
-.projects .projects__wrapper .projects__container .project img {
-    width: 100%;
+    
 }
 .projects .projects__wrapper .projects__container .project .text {
     padding: 2rem;
@@ -611,16 +374,6 @@
 .projects .projects__wrapper .projects__container .project .text p {
     margin: 2.5rem 0;
 }
-
-@media screen and (max-width:500px) {
-    .projects .projects__wrapper .projects__container {
-        display: block;
-    }
-    .projects .projects__wrapper .projects__container .project {
-        margin: 3rem 0;
-    }
-}
-
 
 /* -------------- hm-contact ----------------------- */
 
@@ -767,6 +520,10 @@
     color: #2b2b2b;
     transition: .5s ease;
     border: 1px solid #2b2b2b;
+}
+
+.active{
+    color: #ffa700 !important;
 }
 
 .card {
