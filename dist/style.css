@@ -305,8 +305,8 @@
 
 .about {
     background: #ffffff;
-    padding: 5rem 0;
-    padding-top: 15rem;
+    padding: 15rem 0;
+    /* padding-top: 15rem; */
 }
 
 .about .about__wrapper {
@@ -412,6 +412,76 @@
         padding: 8rem 0;
     }
 }
+
+/* -------------- Latest Trends -------------------- */
+
+.trends {
+    background: #2b2b2b;
+    padding: 8rem 0;
+}
+
+.trends .trends__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 3rem;
+    margin: 5rem 0;
+}
+
+.trends .trends__title h2 {
+    font-size: 4rem;
+    color: #ffa700;
+}
+
+.trends .trends__title p {
+    color: #ffffff;
+    font-size: 1.5rem;
+}
+
+.trends .trends__wrapper .trend{
+    margin: 0 auto;
+}
+.trends .trends__wrapper .trend .content img{
+    width: 100%;
+}
+
+.trends .trends__wrapper .trend .content .text {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0 auto; */
+    padding: 2rem 1rem;
+}
+.trends .trends__wrapper .trend .content .text h4{
+    color: #ffa700;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.trends .trends__wrapper .trend .content .text p{
+    margin: 3rem 0;
+    font-weight: 600;
+    font-size: 1.8rem;
+}  
+.trends .trends__wrapper .trend .content .text a{
+    color: #ffa700;
+    /* font-weight: 600; */
+}
+
+@media screen and (max-width:500px){
+    .trends .trends__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    
+    .trends .trends__title,
+    .trends .trends__wrapper .trend {
+        margin: 2rem auto;
+        max-width: 40rem;
+    }
+    
+}
+
 /* -------------- Repeatable pattern --------------- */
 
 .btn {
@@ -432,9 +502,25 @@
     color: #ffffff;
 }
 
+.bg--white {
+    background-color: #ffffff;
+}
+
 .bg--yellow:hover{
     background: #2b2b2b;
     color: #ffa700;
     transition: .5s ease;
     border: 1px solid #ffa700;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
 }
