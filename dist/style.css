@@ -434,7 +434,7 @@
 
 .trends .trends__title p {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 .trends .trends__wrapper .trend{
@@ -447,7 +447,6 @@
 .trends .trends__wrapper .trend .content .text {
     display: flex;
     flex-direction: column;
-    /* margin: 0 auto; */
     padding: 2rem 1rem;
 }
 .trends .trends__wrapper .trend .content .text h4{
@@ -462,7 +461,6 @@
 }  
 .trends .trends__wrapper .trend .content .text a{
     color: #ffa700;
-    /* font-weight: 600; */
 }
 
 @media screen and (max-width:500px){
@@ -473,13 +471,48 @@
         justify-content: center;
         margin: 0;
     }
-    
     .trends .trends__title,
     .trends .trends__wrapper .trend {
         margin: 2rem auto;
-        max-width: 40rem;
+        max-width: 40rem;   
     }
-    
+    .trends .trends__title{
+        text-align: center;
+    }
+}
+
+/* -------------- hm-contact ----------------------- */
+
+.hm-contact {
+    background: #ffa700;
+}
+
+.hm-contact .hm-contact__wrapper {
+    text-align: center;
+    margin: 8rem 0;
+}
+
+.hm-contact .hm-contact__wrapper h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #000;
+}
+.hm-contact .hm-contact__wrapper p {
+    font-size: 1.5rem;
+    font-weight: 550;
+}
+
+.hm-contact .hm-contact__wrapper a {
+    margin-top: 2rem;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+    padding: 2rem;
+}
+
+@media screen and (max-width:500px){
+    .hm-contact .hm-contact__wrapper p {
+        margin-top: 2rem;
+    }
 }
 
 /* -------------- Repeatable pattern --------------- */
