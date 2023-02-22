@@ -447,7 +447,7 @@
 .trends .trends__wrapper .trend .content .text {
     display: flex;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
 }
 .trends .trends__wrapper .trend .content .text h4{
     color: #ffa700;
@@ -544,6 +544,13 @@
     color: #ffa700;
     transition: .5s ease;
     border: 1px solid #ffa700;
+}
+
+.bg--dark:hover{
+    background: #ffa700;
+    color: #2b2b2b;
+    transition: .5s ease;
+    border: 1px solid #2b2b2b;
 }
 
 .card {
