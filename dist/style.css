@@ -1002,6 +1002,8 @@
     }
 }
 
+/* -------------- contact page --------------------- */
+
 /* -------------- Repeatable pattern --------------- */
 
 .btn {
@@ -1093,4 +1095,12 @@
 
 .flex--reverse{
     flex-direction: row-reverse;
+}
+
+.bt {
+    border-top: 1px solid #ffffff;
+}
+
+.f--right {
+    float: right;
 }
